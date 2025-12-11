@@ -25,5 +25,5 @@ jobs:
       # Step 3: Sync files to S3 bucket
       - name: Deploy to S3
         run: |
-          aws s3 sync . s3://aws-portfolio --exclude ".git/*" --delete
+          aws s3 sync . s3://amzn-web --exclude ".git/*" --delete
 
